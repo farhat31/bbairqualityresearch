@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQ-side-project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <!--Link to style sheet-->
+    <link href="bb-style.css" rel="stylesheet" type="text/css" >
+    <link href="contact.css" rel="stylesheet" type="text/css" >
+</head>
+    
+<body>
+    <script src="script.js"></script>
+    
+      <div class="nav_bar">
+
+      <h1 class="logo">B<span>AQ</span></h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>  
+
+      </div> 
+
+  <div class="cu-container">
+      <form action="https://api.web3forms.com/submit" method="POST" id="contactForm"> 
+         <h1>Contact Us</h1>
+        <p>Have any questions or feedback? Contact us using this form!</p>
+        <input type="hidden" name="access_key" value="b8bb7c79-bdba-440a-ab1a-4a4eab6f6bc1">
+         <input type="text" id="user-fname" name="first_name" placeholder="First Name" 
+         required>
+         <input type="text" id="user-lname" name="last_name" placeholder="Last Name" 
+         required>
+         <input type="email" id="user-email" name="email" placeholder="Email" 
+         required>
+         <textarea id="user-message" name="message" rows="6" placeholder="Type your message here" required></textarea>
+         <button type="submit">Submit</button>
+
+  </div>
+
+    <footer>
+    <p>This is a sample website</p>
+    </footer>
+    
+</body>
+</html>
+

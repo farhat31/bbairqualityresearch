@@ -1,0 +1,165 @@
+body {
+    font-family: sans-serif;
+}
+
+.nav_bar {
+    background-color: darkseagreen;
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    opacity: 1;
+}
+
+.logo {
+    color: darkgreen;
+    font-size: 30px;
+}
+
+.logo span {
+    color: azure;
+}
+
+.nav_bar ul {
+    list-style: none;
+    display: flex;
+}
+
+
+.nav_bar ul li {
+    padding: 20px 30px;
+    position: relative;
+}
+
+.nav_bar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_bar ul li a:hover {
+    color: forestgreen;
+}
+
+.research_dropdown {
+    /*display: none;*/
+    z-index: 5;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: darkseagreen;
+    transition: visibility 0.3s, opacity 0.3s ease; 
+}
+
+.nav_bar ul li:hover .research_dropdown {
+    visibility:visible; 
+    opacity: 1;
+    /*
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: darkseagreen;   */
+}
+
+
+.research_dropdown ul {
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+    display: block;
+    
+}
+
+.research_dropdown ul li {
+    width: 115px;
+    padding: 10px;
+}
+
+
+.bg-head {
+    background-image: url("https://images.unsplash.com/photo-1693081009579-fe6e35181b2f?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 87vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.bg-head h1 {
+    font-size: 50px;
+    position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      size: 20vw;
+      opacity: 1;
+      background-color: darkseagreen;
+}
+
+.aqi {
+    background-color: #4F6F52;
+    margin: 10px;
+    padding: 10px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aqi h2 {
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+.aqi p {
+    margin: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.main-background {
+    background-color: #F1F8E8;
+    height: 20vh;
+    border-radius: 20px; 
+}
+
+.main-background {
+    text-align: center;
+
+}
+
+.main-background p {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-background h2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.graphs {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: darkseagreen;
+    padding: 5px;
+    margin: 5px;
+}
